@@ -1,0 +1,18 @@
+
+
+# bank
+
+program = input("enter the program: ")
+lis = program.split(" ")
+balance = 0
+for i in range(len(lis)-1):
+  if lis[i] == 'D':
+    balance += int(lis[i+1])
+  elif lis[i] == 'W':
+    balance -= int(lis[i+1])
+
+print(balance)
+
+
+l = [1,22,33,22,44,55,66,33,44,55,66,'jack','jill','parrot','jack',44,1,2,55,33,'jill','jack','parrot','affan','cow']
+
